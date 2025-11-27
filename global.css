@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Inter:wght@400;700&display=swap');
 
 /* Force the navigation logo to be smaller (1rem instead of default h-7) */
 .nav-logo {
@@ -19,35 +19,47 @@
   height: 3rem !important;
 }
 
-/* Typography Overrides */
+/* --- TYPOGRAPHY OVERRIDES --- */
 
-/* Force Questrial on Headings */
+/* 1. HEADINGS (Page Content) */
+/* Force Questrial on all H tags */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Questrial', sans-serif !important;
   font-weight: 500 !important;
 }
 
-/* SIDEBAR / NAVIGATION STYLING */
+/* 2. SIDEBAR NAVIGATION */
 
-/* 1. Sidebar Links (Pages) - Questrial, Medium Weight */
-.mint-sidebar a,
-div[class*="sidebar"] a {
+/* A) Links (The pages like Overview, Getting Started) */
+/* We target 'a' tags inside common sidebar containers */
+nav a,
+aside a,
+#sidebar a {
   font-family: 'Questrial', sans-serif !important;
   font-weight: 500 !important;
-  opacity: 0.9;
+  opacity: 0.95 !important; /* Ensure they are visible */
 }
 
-/* 2. Sidebar Group Headers (Categories) - Bold to differentiate */
-.mint-sidebar .group-header,
-div[class*="sidebar"] div[class*="text-xs"], /* Target tiny uppercase headers */
-div[class*="sidebar"] div[class*="font-semibold"] {
-  font-family: 'Inter', sans-serif !important; /* Switched to Inter for better readability */
-  font-weight: 700 !important; /* Bold */
-  letter-spacing: 0.05em;
-  opacity: 0.5 !important; /* Lower opacity for headers */
+/* B) Group Headers (Orbital Social, etc.) */
+/* These are usually text elements that are NOT links inside the nav */
+/* We try multiple common patterns for Mintlify headers */
+nav div[class*="text-"], 
+aside div[class*="text-"],
+nav span[class*="font-"],
+/* Specific catch-all for non-link text in nav specific containers */
+div[class*="sticky"] div[class*="pb-"] > div { 
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  opacity: 0.5 !important;
 }
 
-/* General body font fallback just in case */
+/* Exclude the logo text if it gets caught */
+a[href="/"] div,
+.nav-logo + div {
+  opacity: 1 !important;
+}
+
+/* General body fallback */
 body {
   --font-sans: 'Inter', sans-serif;
   --font-heading: 'Questrial', sans-serif;
