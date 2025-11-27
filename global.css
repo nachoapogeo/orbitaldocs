@@ -22,7 +22,6 @@
 /* --- TYPOGRAPHY OVERRIDES --- */
 
 /* 1. HEADINGS (Page Content) */
-/* Force Questrial on all H tags */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Questrial', sans-serif !important;
   font-weight: 500 !important;
@@ -30,36 +29,33 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 2. SIDEBAR NAVIGATION */
 
-/* A) Links (The pages like Overview, Getting Started) */
-/* We target 'a' tags inside common sidebar containers */
-nav a,
-aside a,
-#sidebar a {
+/* A) Links (Pages like Overview, Getting Started) */
+/* Active and inactive links */
+.mint-sidebar a {
   font-family: 'Questrial', sans-serif !important;
   font-weight: 500 !important;
-  opacity: 0.95 !important; /* Ensure they are visible */
+  opacity: 1 !important; /* Keep links fully visible */
 }
 
-/* B) Group Headers (Orbital Social, etc.) */
-/* These are usually text elements that are NOT links inside the nav */
-/* We try multiple common patterns for Mintlify headers */
-nav div[class*="text-"], 
-aside div[class*="text-"],
-nav span[class*="font-"],
-/* Specific catch-all for non-link text in nav specific containers */
-div[class*="sticky"] div[class*="pb-"] > div { 
+/* B) Group Headers (Orbital Social, Branding, etc.) - NON-CLICKABLE LOOK */
+/* Targeting the specific Mintlify group header class and fallbacks */
+.mint-sidebar .group-header, 
+.sidebar-group-header,
+div[class*="sidebar"] div[class*="text-xs font-bold"], /* Common Mintlify pattern for small caps headers */
+div[class*="sidebar"] div[class*="uppercase"],
+div[class*="sidebar"] .font-semibold:not(a) { /* Bold text that is NOT a link */
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
-  opacity: 0.5 !important;
+  color: #9ca3af !important; /* Light gray (Tailwind gray-400 approx) */
+  opacity: 1 !important; /* Control opacity via color instead */
+  text-transform: uppercase !important; /* Make them uppercase to clearly distinguish from links */
+  font-size: 0.75rem !important; /* Make them smaller (text-xs) */
+  letter-spacing: 0.05em !important;
+  margin-top: 1.5rem !important; /* Add some spacing before groups */
+  cursor: default !important; /* Show default cursor, not pointer */
 }
 
-/* Exclude the logo text if it gets caught */
-a[href="/"] div,
-.nav-logo + div {
-  opacity: 1 !important;
-}
-
-/* General body fallback */
+/* Body fallback */
 body {
   --font-sans: 'Inter', sans-serif;
   --font-heading: 'Questrial', sans-serif;
