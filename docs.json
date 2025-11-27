@@ -14,21 +14,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Orbital Shadcn UI Kit",
-            "pages": [
-              "shadcn-ui-kit/overview",
-              "shadcn-ui-kit/getting-started",
-              "shadcn-ui-kit/variables",
-              "shadcn-ui-kit/theming",
-              "shadcn-ui-kit/typography",
-              "shadcn-ui-kit/light-dark-mode",
-              "shadcn-ui-kit/components",
-              "shadcn-ui-kit/editor",
-              "shadcn-ui-kit/changelog"
-            ]
-          },
-          {
-            "group": "Social Media System",
+            "group": "Orbital Social",
             "pages": [
               "social-media/overview",
               "social-media/getting-started",
@@ -42,7 +28,7 @@
             ]
           },
           {
-            "group": "Brand Book",
+            "group": "Orbital Branding",
             "pages": [
               "brand-book/overview",
               "brand-book/getting-started",
@@ -53,6 +39,20 @@
               "brand-book/components",
               "brand-book/editor",
               "brand-book/changelog"
+            ]
+          },
+          {
+            "group": "Orbital Shadcn UI Kit",
+            "pages": [
+              "shadcn-ui-kit/overview",
+              "shadcn-ui-kit/getting-started",
+              "shadcn-ui-kit/variables",
+              "shadcn-ui-kit/theming",
+              "shadcn-ui-kit/typography",
+              "shadcn-ui-kit/light-dark-mode",
+              "shadcn-ui-kit/components",
+              "shadcn-ui-kit/editor",
+              "shadcn-ui-kit/changelog"
             ]
           }
         ]
@@ -75,7 +75,8 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://www.orbital.supply"
   },
   "navbar": {
     "links": [
