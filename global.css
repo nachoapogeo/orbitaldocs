@@ -16,3 +16,27 @@
   width: 3rem !important;
   height: 3rem !important;
 }
+
+/* Typography Overrides */
+
+/* Force Questrial and weight 500 for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Questrial', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* Navigation Sidebar Links - Force Questrial and weight 500 */
+/* Target Mintlify sidebar links specifically */
+#sidebar a, 
+.sidebar-link,
+nav a { 
+  font-family: 'Questrial', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* Additional specific selectors for Mintlify's sidebar structure if generic ones fail */
+div[class*="sidebar"] a,
+ul[class*="sidebar"] a {
+   font-family: 'Questrial', sans-serif !important;
+   font-weight: 500 !important;
+}
