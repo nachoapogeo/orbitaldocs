@@ -2,6 +2,10 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Orbital Supply Docs",
+  "font": {
+    "headings": "Questrial",
+    "body": "Inter"
+  },
   "colors": {
     "primary": "#1464FF",
     "light": "#1464FF",

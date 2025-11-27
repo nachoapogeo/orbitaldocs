@@ -4,3 +4,15 @@
   width: auto !important;
 }
 
+/* Make product card icons larger */
+.card-icon {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+/* Alternative selector for Mintlify card icons */
+.card .icon,
+.card img[src*="/icons/"] {
+  width: 3rem !important;
+  height: 3rem !important;
+}
