@@ -1,0 +1,66 @@
+---
+title: "Light/Dark Mode"
+description: "Manage dual-theme systems with seamless transitions"
+---
+
+The **Orbital Shadcn UI Kit** is designed with a fully responsive **dual-theme system**, mirroring how Light and Dark modes work in modern web frameworks like Shadcn UI and Tailwind CSS.
+
+Every component in the file automatically adapts to the selected theme, ensuring accurate visual parity between design and front-end environments.
+
+## How It Works
+
+Theme switching is powered by the **Theme** and **Mode** variable collections.
+
+Each mode — *Light* and *Dark* — contains its own color tokens, organized into logical subgroups such as `base`, `chart`, `custom`, `sidebar`, and `shadow`.
+
+These tokens are interconnected, allowing you to preview and modify both themes without losing any visual consistency. When you toggle the theme, all components — including buttons, typography, charts, and marketing blocks — automatically update to reflect the new mode in real time.
+
+### Structure Overview
+
+The variable modes are structured as follows:
+
+| Group | Light Path | Dark Path | Purpose |
+| :--- | :--- | :--- | :--- |
+| Base | `colors/light/base` | `colors/dark/base` | Core UI surfaces (backgrounds, panels, containers) |
+| Chart | `colors/light/chart` | `colors/dark/chart` | Data visualizations and interactive graphics |
+| Custom | `colors/light/custom` | `colors/dark/custom` | Brand accents, highlights, or specific overrides |
+| Sidebar | `colors/light/sidebar` | `colors/dark/sidebar` | Navigation areas and structural UI elements |
+| Shadow | `colors/light/shadow` | `colors/dark/shadow` | Elevation depth and visual hierarchy |
+
+This modular approach ensures complete control — whether you’re working on a dark dashboard interface or a light marketing website.
+
+### Why It Matters
+
+Designing for both Light and Dark modes from the start prevents inconsistencies during development.
+
+Since the Orbital Shadcn UI Kit uses **shared variable logic**, switching themes doesn’t just recolor your UI — it preserves semantic meaning (e.g., “primary background” always stays “primary background,” regardless of its tone).
+
+This means developers and designers always reference the same tokens and logic, resulting in cleaner handoff and consistent implementation across frameworks.
+
+### Customizing Themes
+
+You can edit either mode directly through the **Orbital Variable Editor**.
+
+Each variable update is reflected instantly in Figma, allowing for rapid testing and previewing before export.
+
+Typical customizations include:
+- Updating accent colors for Light/Dark contrast.
+- Adjusting sidebar backgrounds for accessibility.
+- Tuning shadow intensity or color balance between modes.
+
+After customizing, export your JSON file and sync it back into Figma to maintain full alignment with your local theme settings.
+
+## Best Practices
+
+- 🌗 Always design and test both modes simultaneously to avoid unexpected visual breaks.
+- 🧩 Keep variable names consistent across Light and Dark groups for reliable synchronization.
+- ⚖️ Maintain contrast ratios that meet accessibility standards (WCAG AA+ recommended).
+- 🔄 Use Tailwind color references (`slate`, `zinc`, `neutral`) to preserve tone consistency between design and code.
+- 🧠 Avoid hardcoding colors inside components — always use the variable reference.
+
+> **Tip:** Think of Light and Dark mode as visual *states*, not separate themes. A single variable system powers both, ensuring seamless transitions and consistent design logic across your entire UI.
+
+## Next Up
+
+Continue to the [Components](/shadcn-ui-kit/components) page → Explore the full library of UI and marketing components styled with Tailwind logic and Shadcn structure.
+

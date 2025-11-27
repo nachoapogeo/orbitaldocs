@@ -1,0 +1,59 @@
+---
+title: "Theming"
+description: "Switch between Light/Dark and multi-brand identities"
+---
+
+The **Theme collection** is where each brand’s visual identity lives. Colors, typography, radius, borders, and shadows are all controlled here. By separating *Theme* from *Mode*, the Brandbook ensures you can switch between **Light/Dark** without ever losing your brand palettes.
+
+## How Theming Works
+
+### Colors
+- Organized into *Light* and *Dark* groups.
+- Each group includes:
+    - **Base** → Neutrals, Accent, Card
+    - **Shadow** → Shadow color variables in multiple intensities
+
+### Typography
+- Numeric variables for font-family and font-weight live in Theme.
+- These connect directly to text styles (which flow into components).
+
+### Radius & Border Width
+- Numeric variables defining corner radii and border thickness.
+- Used across components to keep visuals consistent.
+
+### Shadows
+- Numeric variables define shadow offsets (x, y, blur, spread).
+- Mapped into shadow effects: 2xs, xs, sm, md, lg, xl.
+- Combined with shadow colors for complete effects.
+
+### Modes
+- Theme has two main modes:
+    - **Client** → the client’s brand system
+    - **Your Brand** → your own studio or project system
+- This allows you to swap instantly between brands without touching components.
+
+## Editing Themes
+
+1. **Open the Theme collection** in Figma Variables panel.
+2. Choose which brand you want to edit (Client / Your Brand).
+3. **Adjust values** for colors, typography, radius, borders, and shadows.
+4. Changes apply everywhere the Theme is connected — from components to entire pages.
+
+## Multi-Brand Workflow
+
+- **One-click switching** → Instantly toggle between Client and Your Brand.
+- **Consistency preserved** → Light/Dark palettes remain intact for each brand.
+
+## Best Practices
+
+- **Edit at Theme level, not in components.** Components should always pull from Theme variables.
+- **Keep Light/Dark pairs consistent.** Always define both versions of each color to ensure smooth switching.
+- **Leverage radius and shadow variables.** Don’t apply raw values directly — use Theme variables to maintain scalability.
+- **Use Client vs Your Brand properly.** Don’t overwrite one with the other — keep them distinct for multi-brand workflows.
+
+## Next Steps
+
+- [Typography](/brand-book/typography) → See how Theme variables control type styles.
+- [Light/Dark Mode](/brand-book/light-dark-mode) → Learn how to toggle palettes instantly without losing brand integrity.
+- [Components](/brand-book/components) → Explore how Theme variables flow into modular blocks.
+

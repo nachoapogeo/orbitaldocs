@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Orbital Supply Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1464FF",
+    "light": "#1464FF",
+    "dark": "#1464FF"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,55 +14,45 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Orbital Shadcn UI Kit",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "shadcn-ui-kit/overview",
+              "shadcn-ui-kit/getting-started",
+              "shadcn-ui-kit/variables",
+              "shadcn-ui-kit/theming",
+              "shadcn-ui-kit/typography",
+              "shadcn-ui-kit/light-dark-mode",
+              "shadcn-ui-kit/components",
+              "shadcn-ui-kit/editor",
+              "shadcn-ui-kit/changelog"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Social Media System",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "social-media/overview",
+              "social-media/getting-started",
+              "social-media/variables",
+              "social-media/theming",
+              "social-media/typography",
+              "social-media/light-dark-mode",
+              "social-media/components",
+              "social-media/editor",
+              "social-media/changelog"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Brand Book",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "brand-book/overview",
+              "brand-book/getting-started",
+              "brand-book/variables",
+              "brand-book/theming",
+              "brand-book/typography",
+              "brand-book/light-dark-mode",
+              "brand-book/components",
+              "brand-book/editor",
+              "brand-book/changelog"
             ]
           }
         ]
@@ -71,9 +61,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Orbital Supply",
+          "href": "https://www.orbital.supply",
+          "icon": "globe"
         },
         {
           "anchor": "Blog",
@@ -91,13 +81,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@orbital.supply"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Buy Templates",
+      "href": "https://www.orbital.supply/pricing"
     }
   },
   "contextual": {
@@ -114,9 +104,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://www.orbital.supply",
+      "linkedin": "https://www.linkedin.com/company/orbital-supply"
     }
   }
 }

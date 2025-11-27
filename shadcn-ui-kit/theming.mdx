@@ -1,0 +1,60 @@
+---
+title: "Theming"
+description: "Customize your visual identity with Tailwind-compliant theming"
+---
+
+The **Orbital Shadcn UI Kit** brings a complete theming system that mirrors how real-world Tailwind and Shadcn projects handle design tokens.
+
+Every color, shadow, and accent adapts dynamically through variable modes — letting you preview, customize, and export your themes without touching a single layer or style manually.
+
+The theming system is fully connected to the **Orbital Variable Editor**, allowing you to see changes in real time and export updated JSON files that sync perfectly with your Figma environment.
+
+## How Theming Works
+
+At its core, the theming engine combines **Theme**, **Mode**, and **Tailwind CSS** collections to define visual context across the system.
+
+You can customize primary colors, adjust neutral ranges, and refine elevation or shadow depth, all while maintaining consistency across both light and dark environments.
+
+Each component automatically inherits its color logic through these connected variables — meaning typography, buttons, cards, and dashboards all update at once when the theme changes.
+
+### Dual Theme Modes
+
+The kit includes fully configured **Light** and **Dark** modes. Each mode contains its own set of values under the `Theme` and `Mode` collections:
+
+| Collection | Light Example | Dark Example |
+| :--- | :--- | :--- |
+| Chart Colors | `colors/light/chart/primary` | `colors/dark/chart/primary` |
+| Shadows | `colors/light/shadow/md` | `colors/dark/shadow/md` |
+| Sidebar | `colors/light/sidebar/base` | `colors/dark/sidebar/base` |
+
+Switching between modes instantly updates all UI components to reflect the selected state — including nested elements and marketing components.
+
+### Tailwind-Driven Palettes
+
+The entire theming structure is **Tailwind-compliant**. Each palette is built using the same naming conventions and scales (`50 → 950`) to ensure seamless translation between design and development.
+
+Tailwind color variables (e.g., `slate`, `emerald`, `violet`) can be directly referenced or overridden to create new brand color systems. This approach makes your Figma file production-ready and developer-friendly by default.
+
+### Customization
+
+You can adjust any theme property directly from the **Orbital Variable Editor**:
+
+- Update base colors or neutral tones.
+- Customize shadow strength or opacity.
+- Define custom accent hues for data visualization (`chart`) or navigation (`sidebar`).
+
+Once you’re done, export the JSON configuration and sync it back into Figma to update the entire kit instantly.
+
+## Best Practices
+
+- 🌗 Always test both Light and Dark modes before export to ensure balanced contrast and accessibility.
+- 🎯 Use Tailwind naming conventions when introducing new variables for future scalability.
+- 🧠 Keep color logic consistent across collections — avoid hardcoding values inside components.
+- 💾 Save theme presets via the Variable Editor to reuse across multiple projects or brands.
+
+> **Tip:** Think of your theme as a live system, not a static palette. Every variable is a token that ensures your UI behaves like real code — predictable, scalable, and always in sync.
+
+## Next Up
+
+Continue to the [Typography](/shadcn-ui-kit/typography) page → Learn how to structure text styles, font scales, and weights aligned with Tailwind and Shadcn conventions.
+

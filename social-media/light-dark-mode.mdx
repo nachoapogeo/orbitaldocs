@@ -1,0 +1,46 @@
+---
+title: "Light/Dark Mode"
+description: "Switch palettes instantly without losing consistency"
+---
+
+The **Light/Dark Mode system** makes it possible to switch between palettes instantly without losing brand consistency. Instead of duplicating posts or rebuilding layouts, colors are defined in the **Theme collection** and connected to **Mode variables**, allowing every post, carousel, or cover to adapt with a single click.
+
+This ensures that your social media assets remain visually coherent and accessible in both light and dark contexts — perfect for previewing how your content will look across platforms and environments.
+
+## How It Works
+
+- **Theme collection** → Stores your brand palettes in two groups: **Light** and **Dark**.
+- **Mode collection** → Connects directly to those Theme variables, enabling one-click switching.
+- Both Light and Dark groups contain the same structure:
+    - **Base** → Neutrals, Accent, Card
+    - **Shadow** → Shadow colors in multiple intensities
+
+Because Mode tokens are linked to Theme tokens, you can switch modes instantly without losing your brand’s palette.
+
+## Editing Light/Dark Modes
+
+1. Open the **Mode collection** in Figma Variables.
+2. Select **Light** or **Dark** mode.
+3. Adjust values in the **Theme collection** (not in Mode directly).
+    - Example: update your Accent color in Theme → Light group, and it updates across every component in Light Mode.
+4. Toggle the Mode to preview all the posts, presentations and covers in Light or Dark instantly.
+
+## Why It Matters
+
+- **Consistency** → Ensures every element (text, background, shadows, cards) stays aligned between Light and Dark.
+- **Accessibility** → Contrast is preserved by defining both Light and Dark values for every color.
+- **Speed** → No need to rebuild layouts; switching is instantaneous.
+- **Scalability** → Works across multi-brand setups (Client / Your Brand). Each brand retains its own Light/Dark palettes.
+
+## Best Practices
+
+- **Always edit Light/Dark colors in the Theme collection.** Never override directly in Mode.
+- **Keep pairs aligned.** Every Neutral, Accent, and Card color should have both Light and Dark values defined.
+- **Test contrasts.** After customizing palettes, preview both modes to ensure readability and accessibility.
+- **Apply Mode at the highest level.** Use it on full pages or slides, not individual components, to preview changes correctly.
+
+## Next Steps
+
+- [Components](/social-media/components) → See how Light/Dark mode affects cards, grids, and other modular sections.
+- [Changelog](/social-media/changelog) → Track updates and improvements to theming and mode switching.
+

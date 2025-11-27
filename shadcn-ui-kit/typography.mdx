@@ -1,0 +1,51 @@
+---
+title: "Typography"
+description: "Master the typographic system powered by Tailwind logic"
+---
+
+The **Orbital Shadcn UI Kit** includes a fully structured typographic system that reflects the same scale logic and hierarchy used in Tailwind CSS and Shadcn UI.
+
+All text elements — from headlines to captions — are connected to variable-driven tokens for font families, sizes, weights, and line heights. This ensures that every adjustment, whether stylistic or functional, updates globally across the entire design system.
+
+## How Typography Works
+
+Typography is entirely controlled through the **Typography** variable collection. Each text component (headings, paragraphs, and labels) references these tokens, ensuring scalability and consistency across the entire interface.
+
+You can modify any font variable through the **Orbital Variable Editor**, and the system will automatically apply your changes to every component — mirroring how Tailwind typography utilities work in code.
+
+### Variable Structure
+
+The collection is divided into four core categories:
+
+| Category | Description | Example Variables |
+| :--- | :--- | :--- |
+| **Font Family** | Defines the main typographic sets — sans, serif, and mono. | `font-sans`, `font-serif`, `font-mono` |
+| **Font Size** | Uses Tailwind-based scales for consistent hierarchy and responsiveness. | `text-xs (12px)` → `text-9xl (128px)` |
+| **Line Height** | Establishes vertical rhythm for each text size, ensuring perfect readability. | `leading-tight`, `leading-relaxed` |
+| **Font Weight** | Manages emphasis and tone within each hierarchy. | `font-light`, `font-medium`, `font-bold` |
+
+These variables are shared across all text components — from large displays to microcopy — ensuring that typography remains consistent even when themes, layouts, or brand settings change.
+
+### Tailwind Alignment
+
+The font scales mirror **Tailwind CSS’s typographic system**, meaning designers and developers speak the same visual language.
+
+For instance:
+- `text-base` in Figma = `text-base` in Tailwind
+- `text-4xl` in Figma = `text-4xl` in Tailwind
+
+This one-to-one relationship eliminates the need for translation between design and front-end development, keeping teams aligned and efficient.
+
+### Tips & Best Practices
+
+- 🔠 Define your preferred font families at the start — this will cascade through all text components.
+- 🧮 Keep consistent type hierarchy: 2–3 heading levels are usually enough for most UIs.
+- 🌓 Test typography in both Light and Dark modes to verify legibility and color contrast.
+- 🧷 Avoid detaching text styles; always use properties or variables to maintain scalability.
+
+> **Tip:** Typography in Orbital Shadcn UI Kit is not static — it’s a living system. Every change you make through variables reflects in real time, ensuring the same design logic developers apply with Tailwind.
+
+## Next Up
+
+Continue to the [Light/Dark Mode](/shadcn-ui-kit/light-dark-mode) page → Learn how variable modes control theme transitions and UI behavior across different environments.
+

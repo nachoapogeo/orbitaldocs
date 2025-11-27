@@ -1,0 +1,74 @@
+---
+title: "Components"
+description: "Explore the complete library of UI and marketing components"
+---
+
+The **Orbital Shadcn UI Kit** includes every core component from the official **shadcn/ui** library — rebuilt in Figma with pixel-perfect logic, Tailwind-based styling, and real component behavior.
+
+Each element is structured to behave as it does in production, allowing designers and developers to work with a shared visual language.
+
+With **56 UI components** and **44 marketing blocks**, the library covers both product interfaces and marketing layouts — bridging the gap between system design and creative implementation.
+
+## Component Logic
+
+Every component in this file is designed to replicate how real Shadcn and Tailwind components function in code. Instead of static frames, each element uses **variables**, **modes**, and **nested properties** to adapt automatically.
+
+- **Variables** define color, spacing, and typography globally.
+- **Component properties** manage variants (e.g. size, state, intent).
+- **Nested component properties** let you modify inner elements like icons, text, or layout directly from the parent layer.
+- **Auto Layout** ensures each component resizes responsively, adapting to multiple screen widths and content lengths.
+
+This makes the UI Kit fully modular — you can update a variable or toggle a property, and every component updates instantly.
+
+### Component Types
+
+The component library is divided into three main categories:
+
+#### 1. UI Components
+Functional, reusable elements that form the core of any interface. Includes buttons, inputs, dropdowns, alerts, tooltips, modals, and more — all designed with Tailwind’s logical naming and responsive constraints.
+
+#### 2. Product Components
+Complex assemblies that combine multiple UI elements, such as tables, forms, navigation bars, and side panels. Each one is built with nested component logic, meaning you can swap or edit internal parts (icons, labels, etc.) from a single property panel.
+
+#### 3. Marketing Blocks
+Prebuilt website sections that combine layout, typography, and UI elements to accelerate marketing page design. Includes hero sections, feature grids, pricing tables, testimonials, and CTAs — each responsive and theme-aware.
+
+## Example: Editing a Component
+
+Let’s modify a **Button** to match your brand palette.
+
+1. Select the **Button component** in Figma.
+2. Use the **Properties panel** to toggle between variants:
+   - `size`: `sm`, `md`, `lg`
+   - `variant`: `default`, `secondary`, `ghost`, `outline`, `link`
+3. Update colors globally through the **Theme variables** — the button’s background and text will update automatically.
+4. Use **Nested Component Properties** to change the icon or label text without opening multiple layers.
+
+Every change stays consistent across the entire design system — from dark mode to export-ready mockups.
+
+## Responsive Design
+
+All components are constructed using **Auto Layout** with Tailwind logic, ensuring that resizing or stacking behavior works naturally:
+
+| Type | Layout | Behavior |
+| :--- | :--- | :--- |
+| Buttons & Inputs | Horizontal | Adjust width based on label content |
+| Cards & Blocks | Vertical | Expand to fit text and image content |
+| Navigation | Mixed | Wraps and reflows across breakpoints |
+
+This responsiveness extends to all marketing components as well, making it simple to preview or adapt web layouts for multiple screen sizes.
+
+## Best Practices
+
+- 🧱 **Never detach components** — use properties and nested structures to modify content or states.
+- 🎨 **Edit through variables** rather than local overrides for guaranteed consistency.
+- 🧠 **Use component properties** for states (hover, active, disabled) rather than duplicating frames.
+- ⚙️ **Keep names aligned with code** — component names follow Shadcn’s naming convention for easier developer handoff.
+- 🧩 **Test in both modes** — all components are light/dark ready and theme-aware.
+
+> **Tip:** The true power of the Orbital Shadcn UI Kit lies in its logic, not just its visuals. Every component was designed to feel like writing Tailwind code — but visually. The more you use variables and properties, the closer your design will behave to production.
+
+## Next Up
+
+Continue to the [Variable Editor](/shadcn-ui-kit/editor) page → Learn how to use Orbital’s Variable Editor to customize, preview, and sync your Figma file with JSON exports in real time.
+

@@ -1,0 +1,66 @@
+---
+title: "Typography"
+description: "A three-layer system for consistent brand typography"
+---
+
+Typography in the Brandbook is built on a **three-layer system**: variables, styles, and components. This ensures maximum flexibility, consistency, and speed when defining or updating type across the entire document.
+
+## 1. Variables
+
+At the foundation, typography is controlled by variables inside the **Theme collection**:
+
+- **Font-family** → Defines which typeface is used.
+- **Font-weight** → Defines available weights.
+- **Font-size** → Defines the size of headings and body.
+
+### Important
+
+When editing variables:
+- The **font-family name must match exactly** the name in the Figma type panel.
+- The **font-weight name must match exactly** the registered weight (e.g. *Medium*, *Regular*, *Bold*).
+
+If names don’t match, connections will break and the system won’t find the correct font.
+
+## 2. Text Styles
+
+Variables are connected to **Text Styles** in Figma. These styles act as the middle layer between raw variables and components.
+
+- **Headings** → From *Display* to *H6*.
+- **Body text** → From *XLarge* to *XSmall*.
+- **Subtitles** → Additional intermediate sizes.
+
+Because styles are powered by variables, changing a variable updates every text style instantly.
+
+## 3. Components
+
+Two **master components** control all typography in the Brandbook:
+
+- **Heading component** → Contains every heading style (Display → H6).
+- **Paragraph component** → Contains every body style (XLarge → XSmall).
+
+These components are then nested into higher-level elements, like **Heading Groups** (a heading + paragraph combo). With this system:
+
+- You can switch heading or body sizes directly via component properties.
+- Any variable or style update cascades down to every instance automatically.
+
+## Flexibility & Versatility
+
+- Update font-family once in **Theme variables**, and the entire Brandbook switches to the new typeface.
+- Adjust font-weight or sizes, and all text components update instantly.
+- Combine heading + body inside nested components, and control them with a single property.
+- Scale typography consistently across Light/Dark themes and even across different brands.
+
+This layered approach makes the system **modular and future-proof** — perfect for handling multi-brand projects or evolving design directions.
+
+## Best Practices
+
+- **Always edit via variables**, not directly in components or styles.
+- **Match font names exactly** to avoid broken connections.
+- **Use component properties** (e.g. in Heading Group) to manage text sizes instead of manual overrides.
+- **Keep consistency**: headings, body, and subtitles should all come from the defined system — never create ad-hoc text styles.
+
+## Next Steps
+
+- [Light/Dark Mode](/brand-book/light-dark-mode) → Learn how typography adapts to different backgrounds and contrasts.
+- [Components](/brand-book/components) → Explore how typography integrates into modular sections like grids, cards, and proposals.
+

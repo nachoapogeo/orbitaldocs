@@ -1,0 +1,61 @@
+---
+title: "Typography"
+description: "A three-layer system for flexible social media type"
+---
+
+Typography in the Social Media System is built on a **three-layer system**: variables, text styles, and components. This ensures maximum flexibility and consistency across all social media formats — from carousels to single posts.
+
+## 1. Variables
+
+At the foundation, typography is controlled by variables inside two collections:
+
+- **Theme** → Font-family and font-weight.
+- **Spacing** → Font-size, with four modes corresponding to standard social media formats (e.g. Instagram Post, Instagram Story, LinkedIn Post, Facebook Cover).
+
+This structure ensures that typography automatically adapts to the selected format.
+
+### Important
+
+When editing variables:
+- The **font-family name must match exactly** the font name in the Figma panel.
+- The **font-weight must match exactly** the registered weight (e.g. *Medium*, *Regular*, *Bold*).
+
+If names don’t match, connections will break and the system won’t find the correct font.
+
+## 2. Text Styles
+
+Variables are connected to **Text Styles** in Figma. These styles act as the middle layer between raw variables and components.
+
+- **Headings** → Display XL → Headline SM.
+- **Body text** → Body LG, Body SM.
+
+Because styles are powered by variables, changing a variable (family, weight, or size) updates every style instantly — and automatically scales depending on the selected format mode.
+
+## 3. Components
+
+Two **master components** control all typography in the Social Media System:
+
+- **Heading component** → Contains every heading style (Display → Headline SM).
+- **Body component** → Contains every body size (Large, Small).
+
+Unlike the Brandbook, there is no “Heading Group” or “Text Block” component here. Typography is kept lean and format-driven, optimized for social media use.
+
+## Flexibility & Versatility
+
+- Update font-family once in **Theme variables**, and every heading and body adapts.
+- Adjust font-size via **Spacing modes**, and posts adapt automatically to platform formats.
+- Switch between Studio and Client branding instantly, keeping typography consistent across proposals and final deliverables.
+- Scale typography seamlessly across different formats (IG, LinkedIn, Facebook) without rebuilding components.
+
+## Best Practices
+
+- **Always edit via variables**, not directly in components or styles.
+- **Match font names exactly** to avoid broken connections.
+- **Switch format modes** in Spacing Social Media to preview how typography adapts to different platforms.
+- **Keep consistency**: never create ad-hoc text styles; always use the defined system.
+
+## Next Steps
+
+- [Light/Dark Mode](/social-media/light-dark-mode) → Learn how typography adapts to different backgrounds and contrasts.
+- [Components](/social-media/components) → Explore how typography integrates into carousels, cards, and other modular templates.
+

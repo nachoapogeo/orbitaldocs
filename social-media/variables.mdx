@@ -1,0 +1,83 @@
+---
+title: "Variables"
+description: "Control the entire document with a few edits"
+---
+
+The **Social Media System** is powered by variables that control every aspect of the document: colors, typography, spacing, numbers, and even text strings. With a few edits, you can update the entire file — from proposals to final posts — in seconds.
+
+## Collections Overview
+
+The file includes several variable collections, each serving a different purpose:
+
+### 1. Onboarding Info
+- **String variables** that store client/studio information.
+- Propagates automatically through the entire document.
+
+<Note>Example: update client name once, and it changes everywhere.</Note>
+
+### 2. Spacing
+- Defines all spacing rules across the document.
+- Groups include:
+    - Font-size
+    - Padding
+    - Gap
+    - Formats
+
+### 3. Theme
+- Where each brand’s look & feel is defined.
+- Groups:
+    - **Colors** (with *light* and *dark* sub-groups → base [neutrals, accent, card] + shadow colors).
+    - **Font** (numeric variables for font families & weights).
+    - **Radius** (numeric).
+    - **Border-width** (numeric).
+    - **Shadow** (numeric variables that map to shadow effects: 2xs, xs, sm, md, lg, xl).
+
+<Note>Modes: **Client** and **Your Brand** → switch between brand palettes instantly.</Note>
+
+### 4. Mode
+- Handles **light/dark mode** switching.
+- Groups mirror those in *Theme* (base + shadow).
+- Connects directly to the Theme variables with the same names.
+- Modes: **Light** and **Dark** → toggle without losing brand palettes.
+
+## How Variables Work
+
+### Onboarding Info
+- Stores client/studio information as **string variables** (e.g. client name, Instagram handle, contact info).
+- When updated once, they propagate across all proposals, posts, and exports.
+
+### Spacing Social Media
+- Controls the dimensions and spacing of posts.
+- Includes **4 modes**, each corresponding to a standard social media format (e.g. Instagram post, Instagram story, LinkedIn post, Facebook cover).
+- Switching modes automatically adjusts layout proportions, margins, and grid behavior for the selected platform.
+
+### Theme
+- Defines brand identity (colors, typography, radius, borders, shadows).
+- Includes two modes: **Client** (for final deliverables) and **Your Brand** (for proposals).
+- Keeps both identities separate but consistent.
+
+### Mode
+- Manages **Light/Dark switching**.
+- Connected directly to Theme variables, ensuring palettes adapt instantly while preserving brand colors.
+- Apply at the page level to preview posts and carousels in both light and dark contexts.
+
+## Editing Variables
+
+- **Use the editor whenever possible** → it lets you adjust variables visually and preview combinations (colors, typography, sizing, radius, shadow) across the different components in seconds.
+- Variables can also be edited manually in Figma.
+
+## Best Practices
+
+- **Never unlink Mode variables from their Theme tokens.** This breaks the Light/Dark switching system.
+- **Don’t apply Theme modes to individual components.** Always apply them at the outermost layer (entire slide or page) to visualize changes instantly.
+- **Always use the correct variable type.**
+    - Example: don’t apply a background variable to text or a text color variable to backgrounds.
+- **Keep changes at the variable level.** Direct edits to components will break consistency.
+- **Check color contrasts.** When customizing palettes, ensure accessibility and balance are preserved.
+
+## Next Steps
+
+- [Theming](/social-media/theming) → Learn how to define and manage brand palettes, shadows, and typography.
+- [Typography](/social-media/typography) → Explore how variable-based type styles flow into components.
+- [Light/Dark Mode](/social-media/light-dark-mode) → See how to toggle between themes without losing brand consistency.
+
