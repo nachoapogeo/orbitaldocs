@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 /* Force the navigation logo to be smaller (1rem instead of default h-7) */
 .nav-logo {
   height: 1rem !important;
@@ -19,24 +21,33 @@
 
 /* Typography Overrides */
 
-/* Force Questrial and weight 500 for all headings */
+/* Force Questrial on Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Questrial', sans-serif !important;
   font-weight: 500 !important;
 }
 
-/* Navigation Sidebar Links - Force Questrial and weight 500 */
-/* Target Mintlify sidebar links specifically */
-#sidebar a, 
-.sidebar-link,
-nav a { 
+/* SIDEBAR / NAVIGATION STYLING */
+
+/* 1. Sidebar Links (Pages) - Questrial, Medium Weight */
+.mint-sidebar a,
+div[class*="sidebar"] a {
   font-family: 'Questrial', sans-serif !important;
   font-weight: 500 !important;
+  opacity: 0.9;
 }
 
-/* Additional specific selectors for Mintlify's sidebar structure if generic ones fail */
-div[class*="sidebar"] a,
-ul[class*="sidebar"] a {
-   font-family: 'Questrial', sans-serif !important;
-   font-weight: 500 !important;
+/* 2. Sidebar Group Headers (Categories) - Bold to differentiate */
+.mint-sidebar .group-header,
+div[class*="sidebar"] div[class*="text-xs"], /* Target tiny uppercase headers */
+div[class*="sidebar"] div[class*="font-semibold"] {
+  font-family: 'Questrial', sans-serif !important;
+  font-weight: 700 !important; /* Bold for group titles */
+  letter-spacing: 0.05em;
+}
+
+/* General body font fallback just in case */
+body {
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Questrial', sans-serif;
 }
