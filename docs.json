@@ -83,12 +83,6 @@
     }
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@orbital.supply"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Buy Templates",
