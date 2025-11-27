@@ -70,14 +70,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Orbital Supply",
+          "anchor": "Getting Started",
           "href": "https://www.orbital.supply",
           "icon": "globe"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
