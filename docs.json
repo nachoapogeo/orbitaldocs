@@ -8,6 +8,11 @@
     "dark": "#1464FF"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://www.orbital.supply"
+  },
   "navigation": {
     "tabs": [
       {
@@ -72,11 +77,6 @@
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
-    "href": "https://www.orbital.supply"
   },
   "navbar": {
     "links": [

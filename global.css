@@ -1,0 +1,6 @@
+/* Force the navigation logo to be smaller (1rem instead of default h-7) */
+.nav-logo {
+  height: 1rem !important;
+  width: auto !important;
+}
+
