@@ -41,8 +41,8 @@ div[class*="sidebar"] a {
 .mint-sidebar .group-header,
 div[class*="sidebar"] div[class*="text-xs"], /* Target tiny uppercase headers */
 div[class*="sidebar"] div[class*="font-semibold"] {
-  font-family: 'Questrial', sans-serif !important;
-  font-weight: 700 !important; /* Bold for group titles */
+  font-family: 'Inter', sans-serif !important; /* Switched to Inter for better readability */
+  font-weight: 700 !important; /* Bold */
   letter-spacing: 0.05em;
   opacity: 0.5 !important; /* Lower opacity for headers */
 }
